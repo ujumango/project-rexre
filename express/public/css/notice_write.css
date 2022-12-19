@@ -1,0 +1,113 @@
+#notice_wrap{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FAF6F0;
+  padding-bottom: 100px;
+  padding-top: 150px;
+}
+.noti_cont{
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.notice_h3{
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+}
+.notice_p{
+   padding-bottom: 50px;
+   text-align: center;
+   color: #000;
+   font-weight: 300;
+   /* border-bottom: 1px #00000070 solid; */
+   margin: 0 10px;
+}
+.notice_form{
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+}
+select{
+  outline: none;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  box-sizing: border-box;
+}
+.notice_content input{
+  width: 696px;
+  border: 1px solid #000;
+  background-color: #fff;
+  outline: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+.memo-area{
+  width: 100%;
+  text-align: left;
+}
+#subject{
+  width: 900px;
+  margin-bottom: 20px;
+}
+.user_info input{
+  width: 200px;
+}
+textarea{
+  width: 900px;
+  outline: none;
+  border: 1px solid #000;
+  background-color: #Fff;
+  margin-bottom: 10px;
+}
+.notice_form label{
+  display: inline-block;
+  width: 100px;
+  color: #000;
+  font-size:14px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.file>input{
+  padding: 7px 20px;
+  margin: 10px 0px;
+}
+  .notice_btn #submit{
+    margin-left: 20px;
+  }
+#submit{
+    width: 120px;
+    height: 45px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    outline: none;
+  }
+  .write_btn{
+    width: 100px; height: 40px;
+   vertical-align: middle;
+    border: 1px solid #000;
+    padding: 0 0;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    /* background-color: #FAF6F0; */
+    background-color: #000000;
+  }
+  .write_bg{
+    background-color: #fff;
+  }
+
+.list_btn{
+  width: 120px !important;
+  height: 45px;
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+  font-weight: 600;
+  outline: none;
+}

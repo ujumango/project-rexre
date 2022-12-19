@@ -1,0 +1,35 @@
+<section id="notice_more">
+    <div class="more_wrap">
+        <h3 class="notice_h3">Notice</h3>
+        <p class="notice_p">리바이리의 새로운 소식을 만나보세요</p>
+      
+          <% let regisYear =  row.create_time.getFullYear();  %>
+          <% let regisMonth =  row.create_time.getMonth()+1;  %>
+          <% let regisDate =  row.create_time.getDate();  %>
+
+        <table class="notice_view p150">
+          <tr class="noti more_subject">
+
+            <td><div class="more_title"><b><%= row.cate %></b> &nbsp;<%= row.title %></div></td>
+            <td class="more_name">
+              <%= row.name %>
+            </td>
+            <td><div id="notice_date"><%= regisYear %>-<%= regisMonth +1 >= 10 ? regisMonth : '0' + regisMonth %>-<%= regisDate >= 10 ? regisDate : '0' + regisDate %></div></td>
+          </tr>
+        
+          <tr class="noti more_content">
+            <!-- <td>내용</td> -->
+            <td>
+                <div><pre> <%= row.content %></pre></div>
+           
+            </td>
+          </tr>
+
+        </table>
+        <input type="button" value="목록" class="list_btn" onclick="location.href='/noticelist'">
+        <input type="submit" value="수정" class="list_btn left20" onclick="javascript:location.href='/editNotice?id=<%= row.id %>'">
+        <input type="submit" value="삭제" class="list_btn left20" onclick="javascript:location.href='/deleteNotice?id=<%= row.id %>'">
+      </div>
+    </div>
+</section>
+

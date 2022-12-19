@@ -1,0 +1,36 @@
+
+
+<section id="product_write">
+    <div class="list_wrap p150">
+      <h3 class="notice_h3">제품 수정페이지</h3>
+      <p class="notice_p">제품 수정 페이지입니다. 제품명, 가격, 이미지 수정 후 저장해주세요</p>
+   
+
+
+    <form action="/updateProduct" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" name="id" value="<%= row.id %>">
+
+        <p><b>*수정 시 반드시 이미지 재업로드해야 함!</b></p>
+        <div class="center"><input type="file" name="product_img" id="p_img" class="center"></div>
+     
+       
+        <div class="center "><input type="text" name="product_name" value="<%= row.name%>" id="p_name" placeholder="제품 이름"></div>
+       <div class="center"><input type="text" name="product_price" id="p_price" value="<%= row.price %>" placeholder="제품 가격"></div>
+       <div class="center"><input type="text" name="product_txt" id="p_txt"  value="<%= row.product_txt %>"placeholder="제품 상단 노출 소개"></div>
+       <div class="center"><input type="text" name="product_exp" id="p_exp" value="<%= row.product_exp %>" placeholder="제품 상세페이지 노출"></div>
+
+     
+        <div class="btn">
+            <input type="button" value="취소" class="list_btn" onclick="location.href='/productlist'">
+            <input class="write_btn" type="submit" value="저장">
+        </div>
+
+
+
+
+
+
+
+    </form>
+</section>

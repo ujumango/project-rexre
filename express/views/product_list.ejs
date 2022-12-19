@@ -1,0 +1,48 @@
+
+
+<section id="product_list">
+    <div class="list_wrap p150">
+      <h3 class="notice_h3">신제품</h3>
+      <p class="notice_p">리바이리의 새로운 제품을 만나보세요</p>
+     
+      <article>
+        <div class="product_wrap">
+ 
+
+            <% rows.forEach((row, index)=>{ %>
+                <% let price = row.price.toLocaleString() %>
+
+                <figure class="product">
+                   
+                    <div class="img" onclick="javascript:location.href='/productviewer?id=<%= row.id %>'"><img src="<%= row.img %>" alt=""></div>
+                    <figcaption>
+                        <h4><%= row.name %></h4>
+                        <p class="txts"><%= row.product_txt %></p>
+                        <p class="price"><%= price %> 원</p>
+
+                        
+
+                       
+                   
+                    </figcaption>
+
+                   
+                </figure>
+
+            <% }); %>
+
+    </div>
+      </article>
+      
+
+
+
+   
+
+    </div>
+    <div class="product_list_btn p100">    
+        <input type="button" value="글쓰기" class="write_btn" onclick="location.href='/productwrite'"></div>
+</div>
+  
+  </section>
+  

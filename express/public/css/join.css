@@ -1,0 +1,190 @@
+/*Join*/
+
+#join{
+  background-color: #FAF6F0;
+}
+#join>div{
+  padding: 150px 0 100px 0;
+}
+
+.join_tb{
+  margin: 0 auto;
+  width: 800px;
+}
+#join tr{
+  width: 100%;
+  text-align: center;
+}
+
+#join td>h1{
+  width: 100%;
+  color: #000;
+  padding: 20px 0 20px 0;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
+.join_tb p{
+  color: #000;
+  padding-bottom: 50px;
+  font-weight: 300;
+  border-bottom: 1px #00000070 solid;
+  margin: 0 30px;
+  margin-bottom: 50px;
+}
+.join_tb label{
+  width: 40%;
+  color: #000;
+  font-size:14px;
+  padding: 10px;
+  text-align: right;
+}
+.join_tb input{
+  width: 60%;
+  color: #000000;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin: 10px 10px;
+  opacity: 0.7;
+  outline: none;
+  border: none;
+}
+#birth{
+  color: #00000090;
+}
+.join_btn{
+  padding:50px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+
+
+/*login*/
+
+#login{
+  background-color: #FAF6F0;
+
+}
+
+#login>div{
+  padding: 150px 0 100px 0;
+}
+
+.login_td{
+  margin: 15px auto;
+  width: 500px;
+
+}
+.login_td h3{
+  padding-top: 50px;
+}
+#login td{
+  text-align: center;
+  background-color: #fff;
+  padding: 0px 50px;
+  box-sizing: border-box;
+}
+
+.under_border{
+  color: #000;
+  padding-bottom: 50px;
+  font-weight: 300;
+  border-bottom: 1px #00000070 solid;
+  margin: 0 30px;
+  margin-bottom: 50px;
+}
+.find a{
+  display: block;
+  width: 100%;
+  text-align: right;
+  border: none;
+}
+.login_box{
+  border:none;
+}
+.login_td input{
+
+  width: 100%;
+  color: #000000;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin: 10px auto;
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+.login_td input::placeholder{
+  color: #000000;
+  font-size: 15px;
+}
+.login_btn_form .login_btn{
+  background-color: #000;
+  color: #fff;
+  margin: 50px 0 20px 0;
+  padding: 20px 0;
+  font-size: 16px;
+}
+.join-sec>td>p{
+  padding-bottom: 50px;
+}
+
+.kakako_join{
+  width: 100%;
+  background-color: #F9E000;
+  font-size: 16px;
+  margin: 20px 0 20px 0;
+  padding: 20px 0;
+  border: 1px solid #000;
+}
+.kakako_join>a{
+  padding-left: 25px;
+  background-image: url(../img/kakao_icon.png);
+  background-position: left bottom 1px;
+  background-size: 22px auto;
+  background-repeat: no-repeat;
+}
+.join-sec2>td>p>a{
+  padding-right: 30px;
+  background-image: url(../img/next_arrow_bk.png);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: auto 15px;
+}
+.join-sec2>td>p{
+  padding-bottom: 20px;
+}
+
+.sns_join{
+  height: 80px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.sns_join>ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sns_join>ul>li>a{
+  display: block;
+  background-position: left 6.5px center;
+  background-size: 20px auto;
+  background-repeat: no-repeat;
+}
+.bk_box{
+  width: 34px; height: 34px;
+  background-color: #000000;
+}
+.apple{
+  background-image: url(../img/apple_logo_wh.png);
+}
+.fb_login{
+  background-image: url(../img/footer_fb_wt.png);
+}
+.naver{
+  background-image: url(../img/naver_icon_wh.png);
+}

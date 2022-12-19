@@ -1,0 +1,55 @@
+<section id="product_more">
+
+
+        <div class="product_more_wrap">
+            <div class="prod_content p100">     
+                <div class="left_info side">
+                    <div class="info_txt">
+
+                    <% let price = row.price.toLocaleString() %>
+
+                        <p><%= row.product_txt %></p>
+                        <h3  ><%= row.name %></h3>
+                        <h4><%= price %> 원</h4>
+                        <h4 class="line">제품설명<span>65reviews</span></h4>
+                        <p><%= row.product_exp %></p>
+                        <input type="button" value="목록" class="list_btn" onclick="location.href='/productlist'">
+                  
+                    </div>
+                  
+                </div>
+            <div class="center_prod"><img src="<%= row.img %>" alt=""></div>
+            <div class="right_cart side">
+                    <div class="info_txt">
+                       
+                        <p>선택</p>
+                        <select id="prod_v_cate" name="pv_cate">
+                          <option value="--">[필수]옵션을 선택해주세요</option>
+                          <option value="선물포장X" >일반</option>
+                          <option value="선물용포장(+3000원)">선물용 포장 (+3000원)</option>
+                        </select>
+                        <h3 id="total_price"><%= price %> 원</h3>
+
+                        <div class="pv_btn">
+                            <div class="viewer_btn">
+                               <div id="pv_cart"> <a href="">장바구니</a></div>
+                               <div id="pv_buy" > <a href="">구매하기</a></div>
+                            </div>
+                            <div id="pv_naver"><a href="">네이버페이</a></div>
+                            <p>*지금 신규가입시 포인트 4천원 지급</p>
+                            <div class="btn">
+                                <input type="button" value="삭제" onclick="javascript:location.href='/deleteP?id=<%= row.id %>'">
+                                <input type="button" value="수정" onclick="javascript:location.href='/productBtn?id=<%= row.id %>'">
+                            </div>
+                  
+                      
+                    </div>
+                </div>
+            </div>
+        </div>   
+        </div>
+
+
+    </div>
+</section>
+ 

@@ -1,0 +1,34 @@
+
+
+<section id="product_write">
+    <div class="list_wrap p150">
+      <h3 class="notice_h3">제품 업로드</h3>
+      <p class="notice_p">제품 업로드 페이지입니다. 제품명, 가격, 이미지 확인 후 저장해주세요</p>
+   
+
+
+    <form action="/productW" method="post" enctype="multipart/form-data">
+
+        
+        <div class="center"><input type="file" name="product_img" id="p_img" class="center"></div>
+       
+       
+        <div class="center "><input type="text" name="product_name" id="p_name" placeholder="제품 이름"></div>
+       <div class="center"><input type="text" name="product_price" id="p_price" placeholder="제품 가격"></div>
+       <div class="center"><input type="text" name="product_txt" id="p_txt" placeholder="제품 상단 노출 소개"></div>
+       <div class="center"><input type="text" name="product_exp" id="p_exp" placeholder="제품 상세페이지 노출"></div>
+
+     
+        <div class="btn">
+            <input type="button" value="취소" class="list_btn" onclick="location.href='/productlist'">
+            <input class="write_btn" type="submit" value="저장">
+        </div>
+
+
+
+
+
+
+
+    </form>
+</section>

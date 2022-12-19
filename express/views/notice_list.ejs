@@ -1,0 +1,66 @@
+
+
+
+<section id="notice_list">
+  <div class="list_wrap p150">
+    <h3 class="notice_h3">공지사항</h3>
+    <p class="notice_p">리바이리의 새로운 소식을 만나보세요</p>
+ 
+    <table>
+      <!-- <thead>
+        <tr>
+          <td class="p50">제목</td>
+          <td class="center">이름</td>
+          <td class="center">등록일</td>
+        </tr>
+      </thead>     -->
+      <tbody>
+
+        <% rows.forEach((row,index) =>{ %> 
+        <% let regisYear =  row.create_time.getFullYear();  %>
+        <% let regisMonth =  row.create_time.getMonth()+1;  %>
+        <% let regisDate =  row.create_time.getDate();  %>
+        
+      <tr>
+        <td class="p50 center notice_list_name"><%= row.cate %></td>
+        <td onclick="javascript:location.href='/contentNotice?id=<%=row.id %>'" class="notice_list_subject"><%= row.title %></td>
+        <td class="p50 center notice_list_name"><%= row.name %></td>
+        <td class="p50 font14 center" ><%= regisYear %>-<%= regisMonth +1 >= 10 ? regisMonth : '0' + regisMonth %>-<%= regisDate >= 10 ? regisDate : '0' + regisDate %></td>
+
+
+      </tr>
+    
+     <% }); %>
+  
+      </tbody>
+     
+    </table>
+
+    <div class="list_bottom">
+        <div></div>
+      <div><ul class="list_num">
+        <span class="arrow_pre"></span>
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+        <span class="arrow_next"></span>
+      </ul></div>
+      <div>
+        <input type="button" value="글쓰기" class="write_btn" onclick="location.href='/write'"></div>
+    </div>
+    <div class="list_bottom2">
+      <select name="" id="">
+        <option value="전체">전체</option>
+        <option value="내용">내용</option>
+        <option value="내용">제목</option>
+      </select>
+      <input type="search" name="search" id="search">
+      <input type="button" value="검색" class="write_btn" onclick="location.href='/write'">
+    </div>
+  </div>
+
+</section>
+
+ 

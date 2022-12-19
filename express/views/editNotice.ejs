@@ -1,0 +1,59 @@
+
+
+<section id="notice_wrap">
+  <div class="noti_cont">
+    <div class="notice_content"> 
+      <h3 class="notice_h3">Edit</h3>
+      <p class="notice_p">공지사항 수정페이지</p>
+  
+      <form method="post" action="/updateNoti" class="notice_form">
+        <input type="hidden" name="id" value="<%= row.id %>">
+        <div class="memo-area user_info">
+          <div>
+            <label>작  성  자 &nbsp; </label>
+            <input type="text" name="name" id="writer" value="<%= row.name %>"></div>
+          <div>
+           
+         
+            <label>비밀번호</label>
+            <input type="password" name="pw"></div>
+            <label>카테고리</label>
+              <select id="notice_cate" name="noti_cate" value="<%= row.cate %>">
+                <option value="--">선택</option>
+                <option value="공지" >공지</option>
+                <option value="이벤트">이벤트</option>
+                <option value="신제품">신제품</option>
+                <option value="발표">발표</option>
+              </select>
+            
+          <div>
+            <input type="text" name="title" id="subject" placeholder="제목" value="<%= row.title %>"></div>
+            <div><textarea name="content" rows="10" cols="100" >
+              <%= row.content %>
+            </textarea></div>
+          </div>
+    
+            <div class="memo-area">
+              <div>
+                <label>URL</label>
+                <input type="url" name="url_link"></div>
+              <div class="file">
+                <label>첨부파일 1</label>
+                <input type="file" name="upload1">
+              </div>
+              <div class="file"><label>첨부파일 2</label>
+                <input type="file" name="upload2"></div>
+           
+            </div>
+        
+
+            <div class="notice_btn">
+              <input type="button" value="취소" class="list_btn" onclick="location.href='/list'">
+              <input type="submit" value="확인" id="submit">
+             </div>
+      </form></div>
+ 
+  </div>
+ 
+</section>
+
